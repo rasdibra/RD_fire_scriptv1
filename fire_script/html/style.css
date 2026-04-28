@@ -1,0 +1,129 @@
+body {
+    background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+#ui {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px;
+    color: white;
+    width: 450px;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    margin: 15px 0;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.btn-small {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-small:hover { background: #666; }
+
+/* Progress Circle Style */
+.circle-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+circle.bg {
+    stroke: #333;
+}
+
+circle.bar {
+    stroke: #ffa500;
+    stroke-dasharray: 283; /* 2 * PI * r (45) */
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+#percentageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Craft Button */
+.craft {
+    background: #ffa500;
+    color: black;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.craft.disabled {
+    background: #555;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.close-btn {
+    background: none;
+    color: #aaa;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.info-box {
+    background: rgba(255, 165, 0, 0.1); /* Nje sfond shume i lehte portokalli */
+    border-left: 3px solid #ffa500;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#info-text {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ffa500;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.hidden { display: none; }

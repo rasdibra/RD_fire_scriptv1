@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui" class="hidden">
+    <h2>Campfire Craft</h2>
+
+    <div class="info-box">
+        <p id="info-text">Mungojnë: 5 Dru & 5 Gurë</p>
+    </div>
+
+    <div class="main-container">
+        <div class="controls">
+            <div class="item">
+                <img id="woodImg" src="">
+                <p>Wood: <span id="woodCount">0 / 0</span></p>
+                <button class="btn-small" onclick="add('wood')">+</button>
+                <button class="btn-small" onclick="remove('wood')">-</button>
+            </div>
+
+            <div class="item">
+                <img id="rockImg" src="">
+                <p>Rock: <span id="rockCount">0 / 0</span></p>
+                <button class="btn-small" onclick="add('rock')">+</button>
+                <button class="btn-small" onclick="remove('rock')">-</button>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <div class="circle-container">
+                <svg width="100" height="100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle id="progress" class="bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div id="percentageText">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <button id="craftBtn" class="craft disabled" onclick="startFire()" disabled>🔥 Ndiz Zjarrin</button>
+    
+    <button class="close-btn" onclick="closeUI()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
