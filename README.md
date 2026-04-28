@@ -1,3 +1,5 @@
+Discord :https://discord.com/channels/1311817682391404605/1428986887065960578/1498742212714827978 here is the vidio
+
 RD_fire_script është një script për RedM i krijuar për të shtuar sistemin e zjarrit në server, i dobishëm sidomos për mot të ftohtë dhe roleplay.
 
 Ky është versioni v1, ku zjarri krijohet duke përdorur një item (campfire).
